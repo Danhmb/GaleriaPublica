@@ -7,13 +7,16 @@ import androidx.lifecycle.AndroidViewModel;
 
 public class MainViewModel extends AndroidViewModel {
     int navigationOpSelected = R.id.gridViewOp;
+
     public MainViewModel(@NonNull Application application){
         super(application);
     }
+
     public int getNavigationOpSelected(){
-        return navigationOpSelected
+        return this.navigationOpSelected;
     }
-    public void setNavigationOpSelected(){
+
+    public void setNavigationOpSelected(int navigationOpSelected){
         this.navigationOpSelected = navigationOpSelected;
     }
 }
